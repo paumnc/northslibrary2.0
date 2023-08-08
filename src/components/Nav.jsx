@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import LibraryLogo from '../assets/north_logo.svg'
+import { Link } from "react-router-dom";
 
 
-const Nav = () => {
+const Nav = ({numberOfItems}) => {
     function openMenu() {
         document.body.classList += " menu--open";
     }
@@ -13,21 +14,21 @@ const Nav = () => {
     return (
         <nav>
             <div className="nav__container">
-                <a href="/">
+                <Link to="/">
                     <img src={LibraryLogo} className="nav_logo--img" alt="" />
-                </a>
+                </Link>
                 <ul className="nav__links">
                     <li className="nav__list">
-                        <a href="/" className="nav__link">Home</a>
+                        <Link to="/" className="nav__link">Home</Link>
                     </li>
                     <li className="nav__list">
-                        <a href="/" className="nav__link nav__link--primary">Books</a>
+                        <Link to="/books" className="nav__link nav__link--primary">Books</Link>
                     </li>
                     <li className="nav__icon nav__list">
-                        <a href="/cart" className="nav__link">
+                        <Link to="/cart" className="nav__link">
                             <FontAwesomeIcon icon='shopping-cart' />
-                            <span className="cart__length">2</span>
-                        </a>
+                          { numberOfItems > 0 && <span className="cart__length">{numberOfItems}</span>}
+                        </Link>
                     </li>
                     <button  onClick={openMenu} className="btn__menu btn__icon">
                     <FontAwesomeIcon icon='bars' />
@@ -39,19 +40,19 @@ const Nav = () => {
                     </button>
                     <ul className="menu__links">
                         <li className="menu__list">
-                            <a href="/" className="menu__link">
+                            <Link to="/" className="menu__link">
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li className="menu__list">
-                            <a href="/" className="menu__link">
+                            <Link to="/books" className="menu__link">
                                 Books
-                            </a>
+                            </Link>
                         </li>
                         <li className="menu__list">
-                            <a href="/" className="menu__link">
+                            <Link to="/cart" className="menu__link">
                                 Cart
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

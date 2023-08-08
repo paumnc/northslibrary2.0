@@ -1,5 +1,6 @@
 import React from "react";
 import Undraw from '../assets/undraw_reading_time_re_phf7.svg'
+import { Link } from "react-router-dom";
 
 const Landing = () => {
     return (
@@ -9,9 +10,9 @@ const Landing = () => {
                     <div className="header__description">
                         <h1>Canada's most awared online library platform</h1>
                         <h2>Find your dream book with <span className="blue">Library</span></h2>
-                        <a href="/">
+                        <Link to="/books">
                             <button className="btn btn__style">Browse Books</button>
-                        </a>
+                        </Link>
                     </div>
                     <figure className="header__img--wrapper">
                         <img src={Undraw} alt="" />
