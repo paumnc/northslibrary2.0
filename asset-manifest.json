@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/northslibrary2.0/static/css/main.879d3e8a.css",
+    "main.js": "/northslibrary2.0/static/js/main.d7cb15f7.js",
+    "static/js/787.23798d5a.chunk.js": "/northslibrary2.0/static/js/787.23798d5a.chunk.js",
+    "static/media/north_logo--white.svg": "/northslibrary2.0/static/media/north_logo--white.c437cc5be36679e556ef96173e3da152.svg",
+    "static/media/north_logo.svg": "/northslibrary2.0/static/media/north_logo.f441fbca5223759d8bad7dfb534664fc.svg",
+    "static/media/undraw_reading_time_re_phf7.svg": "/northslibrary2.0/static/media/undraw_reading_time_re_phf7.eb3e45e4f65d7c7ffe43cd0b3833d501.svg",
+    "static/media/emptycart-2.0.svg": "/northslibrary2.0/static/media/emptycart-2.0.68f0f4241b5ebdda1877e2e39597f585.svg",
+    "index.html": "/northslibrary2.0/index.html",
+    "static/media/wave.svg": "/northslibrary2.0/static/media/wave.42edd5970e3619090a0f.svg",
+    "main.879d3e8a.css.map": "/northslibrary2.0/static/css/main.879d3e8a.css.map",
+    "main.d7cb15f7.js.map": "/northslibrary2.0/static/js/main.d7cb15f7.js.map",
+    "787.23798d5a.chunk.js.map": "/northslibrary2.0/static/js/787.23798d5a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.879d3e8a.css",
+    "static/js/main.d7cb15f7.js"
+  ]
+}
